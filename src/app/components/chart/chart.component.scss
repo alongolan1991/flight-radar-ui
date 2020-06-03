@@ -1,0 +1,43 @@
+.chart-container {
+  .tabs-wrapper {
+    padding-top: 90px;
+    width: 86%;
+    display: flex;
+    margin: 0 auto;
+    .btn {
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
+      margin-right: 14px;
+    }
+  }
+  .headline {
+    margin: 0 auto;
+    width: 86%;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #bbe1fa;
+    letter-spacing: 1px;
+  }
+  .details-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 86%;
+    .row {
+      color: #bbe1fa;
+      padding-top: 5px;
+      font-size: 20px;
+      .red {
+        color: #ff0000;
+      }
+      .green {
+        color: #00ff00;
+      }
+    }
+  }
+  .chart {
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}

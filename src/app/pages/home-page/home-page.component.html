@@ -1,0 +1,20 @@
+<div class="home-page-container">
+  <div class="img-wrapper">
+    <img class="img" src="/assets/images/airplane.jpeg">
+  </div>
+  <div class="header">Fill your flight details to get indication</div>
+  <app-flight-form (emitDate)="setChartDate($event)" (emitFlightDetails)="setCharts($event)"
+    (emitLoader)="toggleLoader($event)"></app-flight-form>
+  <div class="chart-wrapper">
+    <app-chart class="chart" [chart]="weekChart" [chartDate]="chartDate" *ngIf="weekChart"></app-chart>
+    <div class="documentation-wrapper" *ngIf="!showLoader">
+      <app-documentation></app-documentation>
+    </div>
+    <div class="loader-wrapper" *ngIf="showLoader">
+      <div class="loader">Loading...</div>
+      <video class="video" width="320" height="240" loop autoplay>
+        <source src="/assets/images/loader-gif.mov" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>

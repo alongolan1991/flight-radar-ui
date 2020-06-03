@@ -1,0 +1,16 @@
+<div class="chart-container">
+  <div class="tabs-wrapper">
+    <button class="btn" (click)="changeToBar()">Bar</button>
+    <button class="btn" (click)="changeToLine()">Line</button>
+  </div>
+  <!-- <div class="headline" *ngIf="chartDate">Check the graph around {{chartDate}} to find delays possibility</div> -->
+  <div class="details-container">
+    <li class="row">The flight from to <span class="green">least </span>likely to be affected by the weather is on
+      <span class="green">{{minFlight.date | date:'MM/dd'}}</span>
+    </li>
+    <li class="row">The flight from to <span class="red">most </span>likely to be affected by the weather is on
+      <span class="red">{{maxFlight.date | date:'MM/dd'}}</span>
+    </li>
+  </div>
+  <div [id]="chart.id" class="chart"></div>
+</div>

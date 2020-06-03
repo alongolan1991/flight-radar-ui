@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  display: block;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+/* Material elements */
+
+// Home page //
+.home-page-container {
+  .tabs-wrapper {
+    .group {
+      text-align: center;
+      .mat-tab-header {
+        margin-bottom: 80px;
+        .mat-tab-label-container {
+          .mat-tab-list {
+            .mat-tab-labels {
+              justify-content: center;
+              .mat-tab-label {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.c3 svg {
+  font: unset !important;
+}
+
+.mat-input-element {
+  color: #1b262c !important;
+}
+tspan {
+  stroke: #bbe1fa;
+  font-size: 12px;
+  font-weight: 100;
+}
+.domain {
+  stroke: white !important;
+}
+
+.tick {
+  line {
+    stroke: white !important;
+  }
+}
+
+.c3-legend-item {
+  padding-left: 20px !important;
+  text {
+    stroke: white !important;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+}
+
+.c3-axis-x {
+  .tick:nth-child(5) {
+    text {
+      tspan {
+        stroke: #3282b8 !important;
+      }
+    }
+  }
+}
+
+.c3-legend-item-event {
+}
+
+// .c3-circle-3 {
+//   color: #3282b8 !important;
+// }
+
+// .c3-bar-3 {
+//   stroke: #3282b8 !important;
+//   fill: #3282b8 !important;
+// }

@@ -1,0 +1,29 @@
+.documentation-container {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  padding-right: 70px;
+  .table {
+    width: 230px;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 230px;
+    padding: 10px 0 10px 10px;
+    color: #bbe1fa;
+    .headline {
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: left;
+      .percentage-key {
+      }
+      .score-key {
+      }
+    }
+    .row {
+      .percentage-value {
+      }
+      .score-value {
+      }
+    }
+  }
+}

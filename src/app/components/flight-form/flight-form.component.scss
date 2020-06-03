@@ -1,0 +1,57 @@
+.flight-form-container {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 900px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  input {
+    outline: none;
+  }
+  .btn-wrapper {
+    padding-top: 22px;
+    .btn {
+      color: #1b262c;
+      font-size: 12px;
+      width: 130px;
+      height: 32px;
+      background-color: #bbe1fa;
+      font-weight: bold;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      box-shadow: 12px 13px 38px -20px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .input-wrapper {
+    width: 150px;
+    .txt {
+      width: 100%;
+      padding-bottom: 3px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1b262c;
+    }
+    .input {
+      width: 100%;
+      height: 30px;
+      color: #1b262c;
+      font-size: 13px;
+      padding: 0 6px 0 6px;
+      background-color: #bbe1fa;
+      // border: none;
+      border-radius: 4px;
+      box-shadow: 12px 13px 38px -20px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .datepicker-wrapper {
+    height: 38px;
+    .departure-date{
+
+    }
+  }
+}

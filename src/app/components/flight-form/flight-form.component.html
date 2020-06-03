@@ -1,0 +1,21 @@
+<div class="flight-form-container">
+  <div class="input-wrapper">
+    <div class="txt">Origin</div>
+    <input required type="text" class="input" [(ngModel)]="originInput" (focusout)="validateTextInput('origin')" (keyup)="validateTextInput('origin')" placeholder="IATA Code (e.g. - TLV)" [ngStyle]="{'border': originBorderColored ? '1px solid red' : 'unset'}">
+  </div>
+  <div class="input-wrapper">
+    <div class="txt">Destination</div>
+    <input required="true" type="text" class="input" [(ngModel)]="destinationInput" (focusout)="validateTextInput('destination')" (keyup)="validateTextInput('destination')" placeholder="IATA Code (e.g. - MAD)" [ngStyle]="{'border': destinationBorderColored ? '1px solid red' : 'unset'}">
+  </div>
+  <div class="datepicker-wrapper">
+    <mat-form-field>
+      <mat-label>Departure Date</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="departureDateInput">
+      <mat-datepicker-toggle [disableRipple]='true' matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="btn-wrapper">
+    <button class="btn" (click)="getFlightScore()">Send</button>
+  </div>
+</div>

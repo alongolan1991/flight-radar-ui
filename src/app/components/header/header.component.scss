@@ -1,0 +1,18 @@
+$black: '#1b262c';
+$dark-blue: '#0f4c75';
+$medium-blue: '#3282b8';
+$light-blue: '#bbe1fa';
+
+.header-container {
+  background-color: #3282b8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 110px;
+  .header-txt {
+    color: #1b262c;
+    padding-left: 50px;
+    font-size: 38px;
+    font-weight: 900;
+  }
+}
